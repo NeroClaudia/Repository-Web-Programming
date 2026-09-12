@@ -185,3 +185,35 @@ footer {
     color: #7a8794;
     font-size: 0.9rem;
 }
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.nav-toogle-label {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .nav-toogle-label {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    main section:nth-of-type(2) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    header {position: relative;}
+    .nav-toogle-label {display: block;}
+    header nav {display: none; width: 100%; order: 3;}
+    .nav-toogle:checked ~ nav {display: block;}
+    header nav ul {flex-direction: column;}
+    main section:nth-of-type(2) {
+        grid-template-columns: 1fr;
+    }
+    form input, form select {max-width: 100%;}
+}
