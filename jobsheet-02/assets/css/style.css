@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: #00b7ff;
+    color: #1d5b8a;
     text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ a:hover {
 
 /* ===== Header & Navbar (Flexbox) ===== */
 header {
-    background-color: #00b7ff;
+    background-color: #1d5b8a;
     color: #fff;
     padding: 1rem 1.5rem;
     display: flex;
@@ -64,7 +64,7 @@ section {
 
 section h2 {
     margin-bottom: 1rem;
-    color: #00b7ff;
+    color: #1d5b8a;
 }
 
 /* ===== Statistic Cards (CSS Grid) ===== */
@@ -75,7 +75,7 @@ main section:nth-of-type(2) h2 {
 
 main section:nth-of-type(2) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -95,7 +95,7 @@ main section:nth-of-type(2) article h3 {
 main section:nth-of-type(2) article p {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #00b7ff;
+    color: #1d5b8a;
 }
 
 /* ===== Table ===== */
@@ -111,7 +111,7 @@ th, td {
 }
 
 thead {
-    background-color: #00b7ff;
+    background-color: #1d5b8a;
     color: #fff;
 }
 
@@ -165,7 +165,7 @@ form select {
 }
 
 form button[type="submit"] {
-    background-color: #00b7ff;
+    background-color: #1d5b8a;
     color: #fff;
     border: none;
     padding: 0.6rem 1.5rem;
@@ -184,36 +184,4 @@ footer {
     padding: 1.25rem;
     color: #7a8794;
     font-size: 0.9rem;
-}
-
-.table-responsive {
-    overflow-x: auto;
-}
-
-.nav-toogle-label {
-    display: none;
-}
-
-@media (max-width: 480px) {
-    .nav-toogle-label {
-        display: block;
-    }
-}
-
-@media (max-width: 900px) {
-    main section:nth-of-type(2) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    header {position: relative;}
-    .nav-toogle-label {display: block;}
-    header nav {display: none; width: 100%; order: 3;}
-    .nav-toogle:checked ~ nav {display: block;}
-    header nav ul {flex-direction: column;}
-    main section:nth-of-type(2) {
-        grid-template-columns: 1fr;
-    }
-    form input, form select {max-width: 100%;}
 }
