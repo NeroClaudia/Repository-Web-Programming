@@ -186,6 +186,7 @@ footer {
     overflow-x: auto;
 }
 
+<<<<<<< HEAD
 /* ===== Pesan Error Validasi ===== */
 .error {
     display: block;
@@ -213,6 +214,15 @@ footer {
     display: none;
     background: none;
     border: none;
+=======
+/* ===== Hamburger Menu (checkbox hack) ===== */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+>>>>>>> 885d3266354cfb09c4ab4d85603fdf4672ef1eee
     font-size: 1.6rem;
     color: #fff;
     cursor: pointer;
@@ -233,7 +243,11 @@ footer {
         position: relative;
     }
 
+<<<<<<< HEAD
     .nav-toggle-btn {
+=======
+    .nav-toggle-label {
+>>>>>>> 885d3266354cfb09c4ab4d85603fdf4672ef1eee
         display: block;
     }
 
@@ -244,7 +258,11 @@ footer {
         margin-top: 1rem;
     }
 
+<<<<<<< HEAD
     header nav.nav-open {
+=======
+    .nav-toggle:checked ~ nav {
+>>>>>>> 885d3266354cfb09c4ab4d85603fdf4672ef1eee
         display: block;
     }
 
